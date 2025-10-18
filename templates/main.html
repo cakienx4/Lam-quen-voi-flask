@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../static/web.css">
+</head>
+<body>
+    <form action="" id="form-cau-hoi">
+        <h1>Khảo sát người dùng</h1>
+        <h3>Bạn tên là gì?</h3>
+        <input type="text" name="Tên" id="ten" placeholder="Nhập tên của bạn">
+        <h3>Bạn bao nhiêu tuổi?</h3>
+        <input type="text" name="Tuổi" id="tuoi" placeholder="Nhập tuổi của bạn">
+        <h3>Bạn quê ở đâu?</h3>
+        <input type="text" name="Quê" id="que" placeholder="Nhập quê của bạn">
+        <div class="form-row">
+            <h3>Hiện tại bạn là?</h3> 
+            <div class="radio-group">
+                <input type="radio" name="Công việc" id="hs">Học sinh
+                <input type="radio" name="Công việc" id="sv">Sinh viên
+                <input type="radio" name="Công việc" id="dl">Đã đi làm
+            </div>
+        </div>
+        <div class="form-row">
+            <h3>Đánh giá từ 1-5, bạn nghĩ tôi ở mức mấy?</h3>
+            <input type="number" name="Điểm" id="diem" min="1" max="5" step="1" value="1">
+        </div>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

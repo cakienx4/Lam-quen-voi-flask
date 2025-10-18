@@ -1,0 +1,26 @@
+body{
+    display: flex;                  /* Kích hoạt flexbox */
+    justify-content: center;        /* Căn giữa theo chiều ngang */
+    align-items: center;            /* Căn giữa theo chiều dọc */
+    height: 100vh;                  /* Toàn màn hình trình duyệt */
+    margin: 0;                      /* Xóa khoảng cách mặc định */
+    background-color: #f3f3f3;      /* Màu nền nhẹ */
+}
+
+#form-cau-hoi{
+    background-color: white;         /* Màu nền trắng */
+    border: 2px solid black;         /* Viền đen */
+    border-radius: 10px;             /* Bo góc nhẹ */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Tạo bóng */
+    padding: 30px;                   /* Khoảng cách trong */
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+.form-row {
+    display: flex;               /* Cho h3 và radio-group nằm cùng hàng */
+    align-items: center;         /* Căn giữa theo chiều dọc */
+    gap: 15px;                   /* Khoảng cách giữa h3 và các lựa chọn */
+}
