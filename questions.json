@@ -1,0 +1,22 @@
+[
+    {
+        "cauhoi": "1 + 1 = ?",
+        "dapan": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "dapan_dung": "A"
+    },
+    {
+        "cauhoi": "Ai là tác giả của bài hát 'Nàng thơ'?",
+        "dapan": [
+            "Sơn Tùng M-TP",
+            "Chu Anh Kiên",
+            "Hoàng Dũng",
+            "Cristiano Ronaldo"
+        ],
+        "dapan_dung": "A"
+    }
+]

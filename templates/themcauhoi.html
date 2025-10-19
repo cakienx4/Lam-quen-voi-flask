@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm câu hỏi</title>
+    <link rel="stylesheet" href="../static/quiz.css">
+</head>
+<body>
+    <h2>Thêm câu hỏi mới</h2>
+    <form method="POST" action="/tch" id="add-form">
+        <label>Câu hỏi:</label><br>
+        <input type="text" name="cauhoi" required><br><br>
+
+        <label>Đáp án A:</label><br>
+        <input type="text" name="dapanA" required><br>
+
+        <label>Đáp án B:</label><br>
+        <input type="text" name="dapanB" required><br>
+
+        <label>Đáp án C:</label><br>
+        <input type="text" name="dapanC" required><br>
+
+        <label>Đáp án D:</label><br>
+        <input type="text" name="dapanD" required><br><br>
+
+        <label>Đáp án đúng:</label><br>
+        <select name="dapandung" required>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select><br><br>
+
+        <button type="submit">Thêm câu hỏi</button>
+    </form>
+
+    <a href="/">⬅ Quay lại trang chủ</a>
+</body>
+</html>

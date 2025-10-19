@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.question-box {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin: 20px auto;
+    width: 70%;
+    text-align: left;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.answer.green {
+    color: green;
+    font-weight: bold;
+}
+
+.answer.red {
+    color: red;
+    font-weight: bold;
+}
+#form-cau-hoi{
+    background-color: white;         /* Màu nền trắng */
+    border: 2px solid black;         /* Viền đen */
+    border-radius: 10px;             /* Bo góc nhẹ */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Tạo bóng */
+    padding: 30px;                   /* Khoảng cách trong */
+}

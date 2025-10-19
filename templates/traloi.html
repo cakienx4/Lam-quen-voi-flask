@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trả lời câu hỏi</title>
+    <link rel="stylesheet" href="../static/quiz.css">
+</head>
+<body>
+    <h2>Trả lời câu hỏi</h2>
+    <form method="POST" action="/tlch">
+        {% for q in questions %}
+            {% set i = loop.index0 %}
+        <div class="question-box">
+            <h3>{{ q.cauhoi }}</h3>
+            <div class="answers">
+                {% for dap in q.dapan %}
+                    {% set label = ['A','B','C','D'][loop.index0] %}
+                    <label>
+                        <input type="radio" name="q{{ i }}" value="{{ label }}" required>
+                        {{ label }}. {{ dap }}
+                    </label><br>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+        <br>
+        <button type="submit">Nộp bài</button>
+    </form>
+
+    <a href="/">⬅ Quay lại trang chủ</a>
+</body>
+</html>

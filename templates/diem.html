@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả</title>
+    <link rel="stylesheet" href="../static/quiz.css">
+</head>
+<body>
+    <h2>Kết quả của bạn: {{ diem }} điểm</h2>
+
+    {% for q in questions %}
+        {% set i = loop.index0 %}
+        <div class="question-box">
+            <h3>{{ q.cauhoi }}</h3>
+
+            {% for dap in q.dapan %}
+                {% set label = ['A','B','C','D'][loop.index0] %}
+                {% if label == q.dapan_dung %}
+                    <p class="answer green">{{ label }}. {{ dap }}</p>
+                {% elif label == answers.get(i) %}
+                    <p class="answer red">{{ label }}. {{ dap }}</p>
+                {% else %}
+                    <p class="answer">{{ label }}. {{ dap }}</p>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+    <br>
+    <a href="/"><button>Quay lại trang chủ</button></a>
+</body>
+</html>
