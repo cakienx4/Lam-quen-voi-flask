@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin tài khoản</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <form action="/" method="get" id="form-cau-hoi">
+        <h1>Thông tin người dùng:</h1>
+        <p><b>Tên người dùng:</b> {{ ten }}</p>
+        <p><b>Tuổi:</b> {{ tuoi }}</p>
+        <p><b>Quê:</b> {{ que }}</p>
+        <p><b>Công việc:</b> {{ congviec }}</p>
+        <p><b>Đánh giá về mình:</b> {{ diem }}</p>
+        <div style="display: flex; justify-content: flex-end;">
+            <button type="submit" 
+                style="padding:10px 20px; background-color:#007BFF; color:white; border:none; border-radius:5px;">
+                ⬅ Quay lại nhập thông tin
+            </button>
+        </div>
+    </form>
+</body>
+</html>
